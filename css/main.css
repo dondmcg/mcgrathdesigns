@@ -25,6 +25,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    position: relative; 
 }
 
 /*
@@ -99,8 +100,10 @@ textarea {
 body, html {
 	height: 100%;
 	min-height: 100%;
-	background-color: #393939;
-	background-image: url('../img/bg-herr2.jpg');
+}
+
+body.loaded {
+    background-image: url('../img/bg-herr2.jpg');
 }
 .no-js {
 	padding-top: 106px;
@@ -148,6 +151,37 @@ section {
     margin:64px 0 0 0;
 }
 
+#process {
+    color: #fff;
+    background-color: #001a33;
+    border-top: 1px solid #24478f;
+}
+
+#process p{
+    min-height: 100px;
+}
+
+#process img {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+#process .circle-wrap {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    padding-top: 50%;
+    overflow: hidden;
+}
+
+#process h1 {
+    margin-bottom: 0;
+}
+
+#process h2 {
+    margin-top: .67em;
+}
+
 #profile .list-group-item{
     height: 60px;   
 }
@@ -158,8 +192,31 @@ section {
 }
 
 #footer {
-    height:130px; background: #000;
+    color: #9d9d9d;
+    padding-top: 30px;
+    height:130px;
 }
+
+#footer a {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #ffffff;
+}
+
+#footer i {
+    margin: 0 10px;
+    font-size: .8em;
+}
+
+#footer [class^="col-"]:first-of-type, #footer [class*="col-"]:first-of-type { border-left: 0px solid #545554}
+
+#footer [class^="col-"], #footer [class*="col-"] { border-left: 1px solid #545554}
+
+#footer, #footer .container { background: #000; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -378,17 +435,21 @@ section {
    google fonts js assigned classes to avoid FOUC 
    ========================================================================== */
 
-.wf-loading h1,.wf-loading h2, .wf-loading h3, .wf-loading .navbar h1,.wf-loading .navbar h2, .wf-loading .navbar h3 {
+.wf-loading h1,.wf-loading h2, .wf-loading h3, .wf-loading .navbar h1,.wf-loading .navbar-nav, .wf-loading #footer, .wf-loading #process h2 {
     visibility: hidden;
 }
 
-.wf-active h1, .wf-inactive h1, .wf-active h2, .wf-inactive h2, .wf-active h3 , .wf-inactive h3, .wf-active h4, .wf-inactive h4, .wf-active .navbar-nav, .wf-inactive .navbar-nav {
+.wf-active h1, .wf-inactive h1, .wf-active h2, .wf-inactive h2, .wf-active h3 , .wf-inactive h3, .wf-active h4, .wf-inactive h4, .wf-active .navbar-nav, .wf-inactive .navbar-nav,  .wf-active #footer {
     visibility: visible; font-family: 'Josefin Sans', sans-serif;
+}
+
+.wf-active #process h2,.wf-inactive #process h2 {
+    font-family: 'Coda', cursive; font-weight: 800;
 }
 
 
 .signature {
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: center;
 }
 
@@ -497,7 +558,7 @@ ul.txt-scroll li {
 
 .navbar h1 {
     float: left;
-    margin: 4px 0 0 0;
+    margin: 4px 0 4px 0;
 }
 
 .navbar-collapse ul {
@@ -508,23 +569,7 @@ ul.txt-scroll li {
     border: 0;
 }
 
-.process-section {
-    color: #fff;
-    background-color: #8B668B;
-}
-
-.process-section p{
-    min-height: 100px;
-}
-
-.circle-wrap {
-    border-radius: 50%;
-    width: 50%;
-    height: auto;
-    padding-top: 50%;
-    overflow: hidden;
-}
-.process-section img {
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+.list-group-item-heading.none {
+    display: block;
+    min-height: 2.8em;
 }
