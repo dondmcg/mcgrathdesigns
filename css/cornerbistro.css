@@ -1,0 +1,64 @@
+@import url(../../css/glyphs.css);
+
+.logo-o {
+    position:absolute;
+    top:0;
+    left:0;
+    animation: neon-pulse 5s infinite alternate;
+}
+
+@keyframes neon-pulse {
+    0% {
+      opacity: 1;
+    }
+  
+    5% {
+      opacity: 1;
+    }
+    7% {
+      opacity: .5;
+    }
+    9% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    97% {
+      opacity: .7;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+body { background-color:#000; height: 400px; }
+.loading .img-wrap { opacity: 0; }
+.loaded .img-wrap {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+}
+.img-wrap { position:relative; }
+.img-wrap img {
+    position:absolute;
+    left:20%;
+    top:30px;
+}
+.img-wrap a {
+    color: #fff;
+    text-decoration:none;
+    position:absolute;
+    top:10px;
+    right: 10px;
+}
+
+.img-wrap h1 {
+    color: #666;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    position: absolute;
+    left: 22%;
+    top: 340px;
+}

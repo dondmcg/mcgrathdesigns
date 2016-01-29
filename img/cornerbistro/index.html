@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .logo-o {
-                position:absolute;
-                top:0;
-                left:0;
-                animation: neon-pulse 5s infinite alternate;
-            }
-          
-            @keyframes neon-pulse {
-                0% {
-                  opacity: 1;
-                }
-              
-                5% {
-                  opacity: 1;
-                }
-                7% {
-                  opacity: .5;
-                }
-                9% {
-                  opacity: 1;
-                }
-                95% {
-                  opacity: 1;
-                }
-                97% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/css/glyphs.css">
+        <link rel="stylesheet" href="/css/cornerbistro.css">
+        <script>
+            window.onload = function(){
+                var elem = document.getElementsByTagName('body')[0];
+                elem.className = "loaded";
+                elem.onclick = function(){
+                    window.location = '/#demo';
+                    return false;
+                };
+            };
+	    WebFontConfig = {
+		google: { families: [ 'Josefin+Sans::latin', 'Montserrat:400,700:latin' ] } //Coda:400,800:latin'
+	    };
+	    (function() {
+		var wf = document.createElement('script');
+		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	    })();
+        </script>
     </head>
-<body style="background-color:#000;">
-<div class="" style="position:relative;">
-    <img class="logo-btm" src="vector-logo-big.png">
-    <img class="logo-o" src="vector-logo-big-o.png">
-</div>
+<body class="loading">
+    <div class="img-wrap">
+        <a href="/#demo" class="icon-cross2"></a>
+        <img class="logo-btm" src="/img/cornerbistro/vector-logo-big.png">
+        <img class="logo-o" src="/img/cornerbistro/vector-logo-big-o.png">
+        <h1>Custom vector art converted to png and animated</h1>
+    </div>
 </body>
 </html>

@@ -1,0 +1,132 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+ 
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1926.000000pt" height="1100.000000pt" viewBox="0 0 1926.000000 1100.000000"
+ preserveAspectRatio="xMidYMid meet">
+ <style>
+#yellowFeather {
+	fill: #eeeeee;
+    animation:myfill1 5s infinite;
+    -webkit-animation:myfill1 5s infinite;
+    animation-delay: .25s;
+    -webkit-animation-delay: .25s;
+    
+}
+@-webkit-keyframes myfill1 {
+    0%, 100% { fill: #eeeeee; }/* yellow */
+    10% { fill: #F1B13B; }/* yellow */
+    20% { fill: #eeeeee; }
+}
+#orangeFeather {
+   	animation:myfill2 5s infinite;
+    -webkit-animation:myfill2 5s infinite;
+    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+    fill: #eeeeee;
+}
+@-webkit-keyframes myfill2 {
+    0%, 100% { fill: #eeeeee; }/* orange */
+    10% { fill: #E16734; }/* orange */
+    20% { fill: #eeeeee; }
+}
+#redFeather {
+	animation:myfill3 5s infinite;
+    -webkit-animation:myfill3 5s infinite;
+    animation-delay: .75s;
+    -webkit-animation-delay: .75s;
+    fill: #eeeeee;
+}
+@-webkit-keyframes myfill3 {
+    0%, 100%{ fill: #eeeeee; }/* red */
+    10% { fill: #B22A47; }/* red */
+    20% { fill: #eeeeee; }/* red */
+}
+#purpleFeather {
+    animation:myfill4 5s infinite;
+    -webkit-animation:myfill4 5s infinite;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    fill: #eeeeee;
+}
+@-webkit-keyframes myfill4 {
+    0%, 100% { fill: #eeeeee; }/* purple */
+    10%  { fill: #5D5994; }/* purple */
+    20% { fill: #eeeeee; }/* purple */
+}
+#blueFeather {
+    animation:myfill5 5s infinite;
+    -webkit-animation:myfill5 5s infinite;
+    animation-delay: 1.25s;
+    -webkit-animation-delay: 1.25s;
+    fill: #eeeeee;
+}
+@-webkit-keyframes myfill5 {
+    0%, 100% { fill: #eeeeee; }/* blue */
+    10% { fill: #0080B8; }/* blue */
+    20% { fill: #eeeeee; }
+}
+
+#greenFeather {
+
+	animation:myfill6 5s infinite;
+    -webkit-animation:myfill6 5s infinite;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    fill: #eeeeee; 
+}
+@-webkit-keyframes myfill6 {
+	0%, 100% { fill: #eeeeee; }
+    10% { fill: #22A54D; } /* green */
+    20% { fill: #eeeeee; }
+}
+ </style>
+<g id="greenFeather" transform="translate(0.000000,1100.000000) scale(0.100000,-0.100000)" stroke="none"><!-- green -->
+	<path d="M16403 4320 c-222 -28 -453 -97 -627 -188 -80 -42 -787 -528 -2561
+	-1762 l-2450 -1705 2835 -3 c2968 -3 3232 0 3413 38 374 78 675 245 958 529
+	242 244 392 527 467 881 74 344 48 733 -68 1024 -154 389 -471 757 -823 956
+	-170 97 -404 182 -592 216 -105 19 -443 27 -552 14z"/>
+	<!--<animate attributeName="fill" from="#22A54D" to="#0080B8" begin="0s" dur="5s" repeatCount="indefinite"/>-->
+</g>
+<g id="blueFeather" transform="translate(0.000000,1100.000000) scale(0.100000,-0.100000)"
+fill="#0080B8" stroke="none"><!-- blue -->
+	<path d="M15027 8475 c-538 -74 -998 -354 -1296 -790 -84 -122 -92 -139 -235
+	-462 -62 -142 -639 -1444 -1282 -2893 -1039 -2346 -1253 -2835 -1242 -2845 3
+	-3 4650 3187 5150 3534 412 286 519 383 671 611 163 245 261 517 298 834 17
+	142 6 443 -20 571 -46 223 -139 441 -276 645 -168 249 -402 454 -685 599 -219
+	112 -424 179 -615 201 -121 13 -348 11 -468 -5z"/>
+</g>
+<g id="purpleFeather" transform="translate(0.000000,1100.000000) scale(0.100000,-0.100000)"
+fill="#5D5994" stroke="none"><!-- purple -->
+	<path d="M11620 10978 c-320 -24 -615 -128 -887 -311 -424 -286 -704 -730
+	-777 -1232 -17 -115 -23 -245 -13 -261 5 -8 126 -14 404 -19 391 -7 399 -8
+	453 -32 64 -28 90 -49 90 -74 0 -11 -66 -61 -197 -149 -248 -166 -343 -240
+	-427 -332 -120 -131 -186 -303 -173 -448 11 -120 842 -5340 850 -5337 5 1 532
+	1179 1171 2617 640 1438 1197 2685 1239 2770 116 237 193 481 233 742 23 148
+	23 426 1 558 -46 269 -170 549 -348 780 -94 123 -292 319 -396 393 -343 243
+	-799 368 -1223 335z"/>
+</g>
+<g id="redFeather" transform="translate(0.000000,1100.000000) scale(0.100000,-0.100000)"
+fill="#B22A47" stroke="none"><!-- red -->
+	<path d="M7420 10960 c-424 -38 -799 -206 -1093 -488 -408 -394 -625 -948
+	-579 -1479 13 -143 37 -275 70 -378 10 -33 551 -1247 1201 -2698 1048 -2340
+	1427 -3165 1437 -3132 13 39 957 6145 965 6239 23 286 -45 618 -189 919 -94
+	196 -185 320 -363 492 -113 109 -182 165 -301 242 -334 218 -744 319 -1148
+	283z"/>
+</g>
+<g id="orangeFeather" transform="translate(0.000000,1100.000000) scale(0.100000,-0.100000)"
+fill="#E16734" stroke="none"><!-- orange -->
+	<path d="M3856 8469 c-503 -65 -926 -313 -1235 -724 -170 -225 -278 -461 -330
+	-720 -110 -545 19 -1075 364 -1500 169 -208 33 -110 2984 -2144 1504 -1037
+	2745 -1886 2758 -1889 22 -4 21 0 -25 104 -851 1906 -2676 5956 -2706 6004
+	-258 416 -676 717 -1155 831 -187 45 -471 61 -655 38z"/>
+</g>
+<g id="yellowFeather" transform="translate(260.000000,1620.000000) scale(0.100000,-0.100000) rotate(33)"
+fill="#F1B13B" stroke="none"><!-- yellow -->
+	<path d="M3856 8469 c-503 -65 -926 -313 -1235 -724 -170 -225 -278 -461 -330
+	-720 -110 -545 19 -1075 364 -1500 169 -208 33 -110 2984 -2144 1504 -1037
+	2745 -1886 2758 -1889 22 -4 21 0 -25 104 -851 1906 -2676 5956 -2706 6004
+	-258 416 -676 717 -1155 831 -187 45 -471 61 -655 38z"/>
+</g>
+</svg>

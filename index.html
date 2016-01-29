@@ -10,11 +10,12 @@
         <meta name="description" content="McGrathDesigns - PORTFOLIO: McGrathDesigns is a premium web developer and designer utilizing php, mysql, sql, javascript, jqueru, css and HTML5 among other technologies to create, renovate or maintain websites and webpages, specializing in ecommerce.  He also has very strong cartoon and animation capabilities and experience.">
         <meta name="keywords" content="web design, websites, programming, php, jquery, javascript, css, ecommerce, animation, cartoon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="google-site-verification" content="BHakYDvDjF9ybWewF0D-zEqoST9z_pPgenYSfVRw6u4" />
 	<link rel="author" href="http://www.mcgrathdesigns.com"/>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<script type="text/javascript">
 	    WebFontConfig = {
-		google: { families: [ 'Josefin+Sans::latin', 'Coda:400,800:latin' ] }
+		google: { families: [ 'Josefin+Sans::latin', 'Montserrat:400,700:latin' ] } //Coda:400,800:latin'
 	    };
 	    (function() {
 		var wf = document.createElement('script');
@@ -28,10 +29,10 @@
 	</script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/glyphs.css">
 	<link rel="stylesheet" href="css/photoswipe.css">
-	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+	<link rel="stylesheet" href="css/default-skin/default-skin.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/glyphs.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -68,8 +69,8 @@
 				<!--<li><a href="#services" class="page-scroll">Services</a></li>-->
 				<li><a href="#process" class="page-scroll">Process</a></li>
 				<li><a href="#profile" class="page-scroll">Profile</a></li>
-				<!--<li><a href="#demo" class="page-scroll">Demos</a></li>
-				<li><a href="#contact" class="page-scroll">Contact</a></li>-->
+				<!--<li><a href="#demo" class="page-scroll">Demos</a></li>-->
+				<li><a href="#contact" class="page-scroll">Contact</a></li>
 			</ul>
 		    </div>
 		</div>
@@ -78,7 +79,8 @@
 		<div class="container">
 		    <div class="row">
 			<div class="col-lg-12">
-			<h2 class="signature">
+			<h2 id="text-signature">Donald McGrath</h2>
+			<h2 id="signature">
 			    <img src="img/signature.svg" onerror="this.onerror=null; this.src='img/signature.png'" alt="Donald McGrath" width="60%"/>
 			</h2>
 			<div class='txt-scroll-content'>
@@ -87,9 +89,9 @@
 				USER EXPERIENCE
 			      </p>
 			      <ul class="txt-scroll">
-				<li>DESIGN</li>
+				<li>SIMPLIFY</li>
 				<li>INNOVATE</li>
-				<li>REFINE</li>
+				<li>IMPROVE</li>
 				<li>OPTIMIZE</li>
 			      </ul>
 			    </div>
@@ -115,7 +117,7 @@
 				    <h2>Design/Clarify</h2>
 				    <p>Clarify the structure of the project including data model through workflow diagrams, wireframes or low-fi art</p>
 				    <a id="design">
-					<img class="circle-60" src="img/icon-flow-diagram.jpg" alt="flow-diagram" />
+					<img src="img/icon-flow-diagram.jpg" alt="flow-diagram" />
 				    </a>
 				</div>
 				<div class="col-lg-4">
@@ -130,37 +132,106 @@
 		    </div>
 		</div>
 	    </section>
+	    
+	    <!-- Demo Section -->
+	    <section id="demo" class="demo-section">
+		<div class="container">
+		    <div class="row">
+			<div class="col-lg-12">
+			    <h1>Demo Section <small>(more coming soon)</small></h1>
+			</div>
+			<div class="container">
+			    <div class="row">
+				<div class="col-lg-3">
+				    <a href="img/cornerbistro/">
+					<div class="title">
+					    Neon Light Effect
+					</div>
+					<div class="description">
+					    CSS Animation
+					</div>
+					<div class="content">
+					    <img src="img/demo/thmb-bistro.png" />
+					</div>
+				    </a>
+				</div>
+				<div class="col-lg-3">
+				    <a href="/img/peacock/index.html" data-remote="false" data-toggle="modal" data-title="NBC Peacock Loader" data-description="Custom SVG creation & animation" data-target="#demomodal">
+					<div class="title">
+					    NBC Peacock
+					</div>
+					<div class="description">
+					    SVG Animation
+					</div>
+					<div class="content">
+					    <img src="img/demo/thmb-peacock.png" />
+					</div>
+				    </a>
+				</div>
+				<div class="col-lg-3">
+				    <a href="/#demo" >
+					<div class="title">
+					    Coming Soon
+					</div>
+					<div class="description">
+					    
+					</div>
+					<div class="content">
+					    
+					</div>
+				    </a>
+				</div>
+				<div class="col-lg-3">
+				    <a href="/#demo">
+					<div class="title">
+					    Coming Soon
+					</div>
+					<div class="description">
+					    
+					</div>
+					<div class="content">
+					    
+					</div>
+				    </a>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </section>
+	
 	
 	    <!-- Profile Section -->
 	    <section id="profile" class="profile-section">
 		<div class="container">
 		    <div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-6">
 			    <h3 class="list-group-item-header">Professional</h3>
-			    <div class="list-group">
-				    <a href="http://www.linkedin.com/pub/don-mcgrath/11/54b/905" target="new" class="list-group-item">
-					LinkedIn <span class="icon-linkedin pull-right large-icon"></span>
-				    </a>
-				    <a href="resumes/resume_DonaldMcGrath.docx" target="new" class="list-group-item">
-					Resume Short <span class="icon-file-word pull-right large-icon"></span>
-				    </a>
-				    <a href="resumes/resume_DonaldMcGrath.pdf" target="new" class="list-group-item">
-					Resume Short <span class="icon-file-pdf text-danger pull-right large-icon"></span>
-				    </a>
-			    </div>
-			</div>
-			<div class="col-lg-3">
-			    <h3 class="list-group-item-heading none"></h3>
-			    <div class="list-group">
-				    <a href="https://docs.google.com/document/d/1NQg6T4KNt0MyL-F3h1zk6k2_KV0GVNuoJLEXiFoOD08/edit?usp=sharing" target="new" class="list-group-item">
-					Resume Short <span class="icon-google-drive pull-right large-icon"></span>
-				    </a>
-				    <a href="https://docs.google.com/document/d/1wfRRr4-HvA7aL8l50__rfPHJxA2JGHN4wxhU2BiBkq8/edit?usp=sharing" target="new" class="list-group-item">
-					Resume Full <small>3pgs</small> <span class="icon-google-drive pull-right large-icon"></span>
-				    </a>
-				    <a href="http://www.imdb.com/name/nm2864367/" target="new" class="list-group-item">
-					Internet Movie Database <span class="icon-imdb pull-right large-icon"></span>
-				    </a>
+				<div class="list-group">
+				    <div class="list-group-item list-group-item-split ">
+					<a href="http://www.linkedin.com/pub/don-mcgrath/11/54b/905" target="new" class="list-group-item-left">
+					    LinkedIn <span class="icon-linkedin large-icon pull-right"></span>
+					</a>
+					<a href="https://docs.google.com/document/d/1NQg6T4KNt0MyL-F3h1zk6k2_KV0GVNuoJLEXiFoOD08/edit?usp=sharing" target="new" class="list-group-item-right">
+					    Resume (Google doc) <span class="icon-google-drive pull-right large-icon"></span>
+					</a>
+				    </div>
+				    <div class="list-group-item list-group-item-split ">
+					<a href="resumes/resume_DonaldMcGrath.doc" target="new" class="list-group-item-left">
+					    Resume <small>(Word)</small> <span class="icon-file-word large-icon pull-right"></span>
+					</a>
+					<a href="https://docs.google.com/document/d/1wfRRr4-HvA7aL8l50__rfPHJxA2JGHN4wxhU2BiBkq8/edit?usp=sharing" target="new" class="list-group-item-right">
+					    Resume Full <small>3pgs</small> <span class="icon-google-drive pull-right large-icon"></span>
+					</a>
+				    </div>
+				    <div class="list-group-item list-group-item-split ">
+					<a href="resumes/resume_DonaldMcGrath.pdf" target="new" class="list-group-item-left">
+					    Resume <small>(PDF)</small> <span class="icon-file-pdf text-danger pull-right large-icon"></span>
+					</a>
+					<a href="http://www.imdb.com/name/nm2864367/" target="new" class="list-group-item-right">
+					    Internet Movie Database <span class="icon-imdb pull-right large-icon"></span>
+					</a>
+				    </div>
 			    </div>
 			</div>
 			<div class="col-lg-3">
@@ -182,67 +253,54 @@
 				    QR code
 				    <span class="icon-qrcode pull-right large-icon"></span>
 				</a>
-				<img src="img/qrcode.png" alt="qr code" style="display:none"/>
+				<img src="img/qrcode.png" id="qrcodeimg" alt="qr code" style="display:none"/>
 			    </div>
 			</div>
 		    </div>
 		</div>
 	    </section>
-	    
-	    <!-- Demo Section 
-	    <section id="demo" class="demo-section">
-		<div class="container">
-		    <div class="row">
-			<div class="col-lg-12">
-			    <h1>Demo Section</h1>
-			</div>
-		    </div>
-		</div>
-	    </section>-->
-	
-	    <!-- Contact Section
-	    <section id="contact" class="contact-section">
-		<div class="container">
-		    <div class="row">
-			<div class="col-lg-12">
-			    <h1>Contact Section</h1>
-			</div>
-		    </div>
-		</div>
-	    </section>-->
 	</main>
-	<footer>
+	<footer id="contact">
 	    <div id="footer">
-		<div class="container">
+		<div class="container no-mobile-margin">
 		    <div class="row">
 			<div class="col-lg-4">
-			    <div>
-				<a href="footerlink"><span class="contact-label">email</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
-			    </div>
-			    <div>
-				<a href="footerlink"><span class="contact-label">cell phone</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
-			    </div>
-			</div>
-			<div class="col-lg-4">
-			    <div>
-				<a href="footerlink"><span class="contact-label">google plus</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
-			    </div>
-			    <div>
-				<a href="footerlink"><span class="contact-label">aim</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+			    <h3>Address & Phone</h3>
+			    <div class="footer-panel">
+				<div>
+				    <a href="footerlink"><span class="contact-label">email</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
+				<div>
+				    <a href="footerlink"><span class="contact-label">cell phone</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
+				<div>
+				    <a href="footerlink"><span class="contact-label">mailing address</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
 			    </div>
 			</div>
 			<div class="col-lg-4">
-			    <div>
-				<a href="footerlink"><span class="contact-label">skype</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
-			    </div>
-			    <div>
-				<a href="footerlink"><span class="contact-label">screenhero</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
-			    </div>
-			    <div>
-				<a href="footerlink"><span class="contact-label">mailing address</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+			    <h3>Teleconference</h3>
+			    <div class="footer-panel">
+				<div>
+				    <a href="footerlink"><span class="contact-label">google hangout</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
+				<div>
+				    <a href="footerlink" id="myskypelink"><span class="contact-label">skype</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
+				<div>
+				    <a href="footerlink"><span class="contact-label">screenhero</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
 			    </div>
 			</div>
-		<div class="container">
+			<div class="col-lg-4">
+			    <h3>Chat</h3>
+			    <div class="footer-panel">
+				<div>
+				    <a href="footerlink" id="mychatlink"><span class="contact-label">sms/imessage</span><i class="icon-circle-right"></i></a><span class="contact-target"></span>
+				</div>
+			    </div>
+			</div>
+		<div class="container no-mobile-margin copyright">
 		    <div class="row">
 			<div class="col-lg-12 text-center">
 			     &#169; 2002 McGrathDesigns
@@ -252,6 +310,7 @@
 	    </div>
 	</footer>
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<!-- ################################################# -->
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 	    <!-- Background of PhotoSwipe. 
 		 It's a separate element as animating opacity is faster than rgba(). -->
@@ -298,6 +357,31 @@
 		</div>
 	    </div>
 	</div>
+	<!-- END OF:Root element of PhotoSwipe -->
+	<!-- ################################# -->
+	
+	<!-- Root element of Bootstrap Modal -->
+	<!-- ################################################# -->
+	
+	<div class="modal fade" id="demomodal">
+	    <div class="modal-dialog">
+	      <div class="modal-content">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  <h4 class="modal-title"></h4>
+		</div>
+		<div class="modal-body">
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		</div>
+	      </div>
+	    </div>
+	</div>
+	
+	<!-- END OF:Root element of PhotoSwipe -->
+	<!-- ################################# -->
+	
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

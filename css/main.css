@@ -13,6 +13,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url("mediaqueries.css");
 
 html,
 button,
@@ -152,9 +153,9 @@ section {
 }
 
 #process {
-    color: #fff;
-    background-color: #001a33;
-    border-top: 1px solid #24478f;
+    color: #F0F8FF;
+    background-color: #195A93;
+    border-top: 1px solid #6C92E0;
 }
 
 #process p{
@@ -182,6 +183,26 @@ section {
     margin-top: .67em;
 }
 
+#process a {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    cursor: hand;
+    cursor: pointer;
+}
+
+#process a:hover, #process a:focus, #process a:active {
+    opacity: .7;
+}
+
 #profile .list-group-item{
     height: 60px;   
 }
@@ -191,10 +212,52 @@ section {
     line-height: 2.5;
 }
 
+#profile a.list-group-item:hover {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5
+}
+
+#demo a {
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    position:relative;
+}
+
+#demo a .title {
+    position:absolute;
+    top:-24px;
+    color: #B0C4DE;
+    font-size: 1.4em;
+    font-weight: 800;
+    
+}
+
+#demo a .description {
+    position:absolute;
+    top:0;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px #000;
+    padding-left: 5px;
+}
+
+#demo a.content {
+    position:absolute;
+    top:0;
+}
+
 #footer {
     color: #9d9d9d;
     padding-top: 30px;
-    height:130px;
+    font-size: 1.2em;
+}
+
+footer .copyright {
+    font-size: .8em;
 }
 
 #footer a {
@@ -208,14 +271,19 @@ section {
 
 #footer i {
     margin: 0 10px;
-    font-size: .8em;
+    font-size: .6em;
 }
 
-#footer [class^="col-"]:first-of-type, #footer [class*="col-"]:first-of-type { border-left: 0px solid #545554}
-
-#footer [class^="col-"], #footer [class*="col-"] { border-left: 1px solid #545554}
-
+#footer h3 {
+    text-transform: uppercase;
+    font-size: .7em;
+    color: #ffffff;
+}
 #footer, #footer .container { background: #000; }
+
+#footer .footer-panel {
+    padding: 10px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,6 +328,22 @@ section {
     display: block;
     width: 0;
     height: 150%;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
 }
 
 /*
@@ -361,6 +445,11 @@ section {
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
 
 @media print {
     * {
@@ -435,22 +524,16 @@ section {
    google fonts js assigned classes to avoid FOUC 
    ========================================================================== */
 
-.wf-loading h1,.wf-loading h2, .wf-loading h3, .wf-loading .navbar h1,.wf-loading .navbar-nav, .wf-loading #footer, .wf-loading #process h2 {
+.wf-loading h1,.wf-loading h2, .wf-loading h3, .wf-loading .navbar h1,.wf-loading .navbar-nav, .wf-loading #footer, .wf-loading #process h2, .wf-loading #demo a {
     visibility: hidden;
 }
 
-.wf-active h1, .wf-inactive h1, .wf-active h2, .wf-inactive h2, .wf-active h3 , .wf-inactive h3, .wf-active h4, .wf-inactive h4, .wf-active .navbar-nav, .wf-inactive .navbar-nav,  .wf-active #footer {
+.wf-active h1, .wf-inactive h1, .wf-active h2, .wf-inactive h2, .wf-active h3 , .wf-inactive h3, .wf-active h4, .wf-inactive h4, .wf-active .navbar-nav, .wf-inactive .navbar-nav,  .wf-active #footer, .wf-inactive #footer, .wf-active #demo a, .wf-inactive #demo a {
     visibility: visible; font-family: 'Josefin Sans', sans-serif;
 }
 
 .wf-active #process h2,.wf-inactive #process h2 {
-    font-family: 'Coda', cursive; font-weight: 800;
-}
-
-
-.signature {
-    margin: 40px 0;
-    text-align: center;
+    font-family: 'Montserrat', latin; font-weight: 700;
 }
 
 /* ==========================================================================
@@ -459,7 +542,7 @@ section {
 
 .txt-scroll-content {
     width:394px;
-    text-align:right;
+    text-align:left;
     font-size: 1.6em;
     line-height:40px;
     font-family:'Arial';
@@ -566,10 +649,49 @@ ul.txt-scroll li {
 }
 
 .navbar-inverse {
-    border: 0;
+    border-bottom: 1px solid #2B2B2B;
 }
 
 .list-group-item-heading.none {
     display: block;
     min-height: 2.8em;
+}
+
+.list-group-item-split {
+    padding: 0;
+}
+
+.list-group-item-split .list-group-item-left, .list-group-item-split .list-group-item-right{
+    display:inline-block;
+    line-height: 36px;
+}
+
+.list-group-item-split .list-group-item-left:hover, .list-group-item-split .list-group-item-right:hover {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5
+}
+
+.list-group-item-left {
+    border-right: 1px solid #dddddd;
+    float:left;
+}
+
+.list-group-item-right {
+    float:right;
+}
+
+
+#signature, #text-signature {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 2.8em;
+}
+
+#text-signature {
+    margin: 40px 0 10px 0;
+}
+
+#qrcodeimg {
+    padding: 20px;
 }

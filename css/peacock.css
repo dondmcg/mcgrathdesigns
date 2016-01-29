@@ -1,0 +1,27 @@
+.loading .img-wrap{ opacity: 0; }
+.loaded .img-wrap {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+}
+
+.modal-body {
+    background-color: #ccc;
+}
+
+.modal-title {
+    font-size: 1.7em;
+}
+
+.modal-description {
+    color: #666666;
+    margin: 0;
+}
+
+.img-wrap {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
