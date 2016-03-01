@@ -1,0 +1,30 @@
+{
+  "name": "mcgrathdesigns.com",
+  "version": "1.0.0",
+  "description": "McgrathDesigns homepage",
+  "main": "application.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dondmcg/mcgrathdesigns.git"
+  },
+  "keywords": [
+  ],
+  "author": "Don McGrath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dondmcg/mcgrathdesigns/issues"
+  },
+  "homepage": "https://github.com/dondmcg/mcgrathdesigns",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-route": "^1.4.9",
+    "bootstrap": "^3.3.6",
+    "qunit": "^0.9.0"
+  },
+  "devDependencies": {
+    "live-server": "^0.9.1"
+  }
+}
